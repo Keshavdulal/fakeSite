@@ -1,9 +1,8 @@
-import clsx from 'clsx'
-import Image from 'next/image'
 import React, { useEffect } from 'react'
 
-import GridContainer from '_components/GridContainer'
+import Hero from '_components/Hero'
 import VideoSection from '_components/VideoSection'
+import GridContainer from '_components/GridContainer'
 
 const Home = () => {
   useEffect(() => {
@@ -13,18 +12,7 @@ const Home = () => {
   return (
     <main className='font-sourceSansPro'>
       {/* Hero Section */}
-      <section className={clsx('bg-blue-100 py-96', 'flex flex-col items-center justify-center')}>
-        <h1 className='text-6xl text-secondary mb-20'>The world's greatest fake site</h1>
-
-        <p className='text-secondary text-4xl mb-20'>
-          Create the world's greatest fake site and enjoy the breeze of fresh air when you complete
-          it.
-        </p>
-
-        <button className='bg-primary text-white h-20 text-4xl px-10 rounded-full'>
-          Do something awesome
-        </button>
-      </section>
+      <Hero />
 
       {/* Videos Section */}
       {/* TODO Fetch Videos here */}

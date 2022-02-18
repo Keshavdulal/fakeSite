@@ -12,16 +12,16 @@ export default function MainApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <>
+    <div className='relative'>
       <Header />
 
       <div
         id='main-content'
         className='flex flex-col flex-grow flex-shrink-0 min-h-screen overflow-hidden'>
-        <GridOverlay />
+        {/* <GridOverlay /> */}
         <Component {...pageProps} />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }

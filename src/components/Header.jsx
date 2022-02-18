@@ -1,17 +1,36 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 import GridContainer from './GridContainer'
 
+import logo from '_public/assets/logo.png'
+import stockImage from '_public/assets/stockimage.png'
+
 const Header = () => {
   return (
-    <header>
+    <header className='absolute left-0 right-0 top-0 py-10'>
       <GridContainer>
         <nav className='grid col-span-10 col-start-1'>
-          <ul className='flex flex-1 bg-pink-300 space-x-28'>
-            <li className='flex-1'>Fox</li>
+          <ul className='flex flex-1 space-x-28 text-4xl items-center text-white'>
+            <li className='flex-1'>
+              <Link href='#'>
+                <Image src={logo} alt='Fake Site Logo' width='40' height='40' />
+              </Link>
+            </li>
             <li>Account</li>
             <li>Help</li>
-            <li>User</li>
+            <li>
+              <Link href='#'>
+                <Image
+                  src={stockImage}
+                  alt='Fake Site Logo'
+                  width='40'
+                  height='40'
+                  className='border-2 border-white rounded-full'
+                />
+              </Link>
+            </li>
           </ul>
         </nav>
       </GridContainer>

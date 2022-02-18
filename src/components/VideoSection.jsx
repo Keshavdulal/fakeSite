@@ -22,20 +22,20 @@ const VideoSection = () => {
     <section className='py-10'>
       {VimeoVideos.map((item, index) => (
         <GridContainer key={item?.id} className='pb-20'>
-          <div className='col-start-1 bg-purple-300 col-span-5'>
+          <div className='col-start-1 col-span-5'>
             <h2 className='text-6xl text-secondary mb-20'>{item?.title}</h2>
             <p className='text-secondary text-4xl'>{getTrimmedString(item?.description)}</p>
           </div>
 
           <div className='col-start-7 col-span-4'>
             {item?.thumbnail_medium ? (
-              <div className='relative'>
+              <div className='relative cursor-pointer'>
                 <Image
                   src={item?.thumbnail_medium}
                   alt={item?.title}
                   height='360'
                   width='640'
-                  className='width-full '
+                  className='rounded-lg'
                 />
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                   <Image src={playBtn} alt='Play Button' height='100' width='100' />
