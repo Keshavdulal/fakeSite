@@ -10,7 +10,7 @@ const Home = () => {
   }, [])
 
   return (
-    <main>
+    <main className='font-sourceSansPro'>
       {/* Hero Section */}
       <section className={clsx('bg-blue-100 py-96', 'flex flex-col items-center justify-center')}>
         <h1 className='text-6xl text-secondary mb-20'>The world's greatest fake site</h1>

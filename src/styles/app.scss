@@ -14,8 +14,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro';
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+  // Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   /* // font-size: 6px; */
   /* // root-font-size is 10px but is clamped */
@@ -39,4 +40,8 @@ body {
   @media screen and (min-width: 1024px) {
     font-size: clamp(6.5px, -03.43px + 0.8721vw, 10px);
   }
+}
+
+* {
+  font-family: 'Source Sans Pro';
 }

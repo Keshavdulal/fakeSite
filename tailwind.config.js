@@ -110,17 +110,15 @@ module.exports = {
       // custom color pallete imported from tailwind.scss
       colors: {
         primary: {
-          DEFAULT: 'var(--primary)', // steel-blue
-          light: 'var(--primary-light)', // light-steel-blue
+          DEFAULT: 'var(--primary)',
         },
-        secondary: 'var(--secondary)', // white
-        background: 'var(--background)', // light-gray
-        image: 'var(--image)', // light-gray 2
+        secondary: 'var(--secondary)',
+        tertiary: 'var(--tertiary)',
       },
     },
     fontFamily: {
-      // sans: '"Good Sans","ABC Monument Grotesk"',
-      // monumentGrotesk: 'ABC Monument Grotesk', // for headings that use Good Sans by default
+      sourceSansPro: ['Source Sans Pro'],
+      sans: ['Source Sans Pro', 'sans-serif'],
     },
   },
   // plugins: [require('@tailwindcss/aspect-ratio')],
