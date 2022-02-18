@@ -5,10 +5,10 @@
       "_components/*": ["src/components/*"],
       // "_utils/*": ["src/utils/*"],
       // "_hooks/*": ["src/hooks/*"],
-      "_styles/*": ["src/styles/*"]
+      "_styles/*": ["src/styles/*"],
       // "_config/*": ["src/config/*"],
       // "_services/*": ["src/services/*"],
-      // "_public/*": ["public/*"]
+      "_public/*": ["public/*"]
     },
     "jsx": "preserve"
   },

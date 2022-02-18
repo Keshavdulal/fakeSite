@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useEffect } from 'react'
 
 import GridContainer from '_components/GridContainer'
+import VideoSection from '_components/VideoSection'
 
 const Home = () => {
   useEffect(() => {
@@ -27,19 +28,7 @@ const Home = () => {
 
       {/* Videos Section */}
       {/* TODO Fetch Videos here */}
-      <section className='py-10'>
-        <GridContainer>
-          <div className='col-start-1 bg-purple-300 col-span-5'>
-            <h2 className='text-6xl text-secondary mb-20'>Title</h2>
-            <p className='text-secondary text-4xl'>Vid Desc</p>
-          </div>
-
-          <div className='col-start-7 col-span-4 bg-purple-600'>
-            <p className='text-secondary text-4xl'>Image</p>
-            {/* <Image /> */}
-          </div>
-        </GridContainer>
-      </section>
+      <VideoSection />
 
       {/* Third Section */}
       <section>
