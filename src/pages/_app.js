@@ -4,7 +4,7 @@ import Header from '_components/Header'
 import Footer from '_components/Footer'
 import GridOverlay from '_components/GridOverlay'
 
-import '_styles/app.css'
+import '_styles/app.scss'
 
 export default function MainApp({ Component, pageProps }) {
   useEffect(() => {

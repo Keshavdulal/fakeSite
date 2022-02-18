@@ -1,0 +1,42 @@
+// Tailwind imports
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Global colors
+:root {
+  --primary: #ee2d1c; // redish
+  --secondary: #4c4c51; // blackish
+  --tertiary: #88939e; // blueish
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  /* // font-size: 6px; */
+  /* // root-font-size is 10px but is clamped */
+  /* // Read more about clamping & clamping function generator below: */
+  /* // https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/ */
+  /* // clamp( minSize, preferred, maxSize) */
+
+  /* // mobile viewport between 320px & 767px  - NO Clamping */
+
+  @media screen and (max-width: 767px) {
+    /* //font-size: clamp(8.5px, 7.426px + 0.3356vw, 10px); */
+    font-size: 10px;
+  }
+
+  /* // tablet viewport between 768 & 1023 - NO Clamping */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 5px;
+  }
+
+  /* // clamps desktop viewport between 1024 & 1540 */
+  @media screen and (min-width: 1024px) {
+    font-size: clamp(6.5px, -03.43px + 0.8721vw, 10px);
+  }
+}
