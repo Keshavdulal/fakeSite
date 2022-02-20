@@ -5,7 +5,7 @@ import useKeyPress from '_hooks/useKeyPress'
 
 // Grid Overlay for toggling grid system
 const GridOverlay = () => {
-  const [isGridActive, setGridStatus] = useState(true)
+  const [isGridActive, setGridStatus] = useState(false)
 
   // Track multi-key press
   const ctrlPress = useKeyPress('control') // key - ctrl
