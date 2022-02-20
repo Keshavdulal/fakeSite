@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import Hero from '_components/Hero'
-import VideoSection from '_components/VideoSection'
+import { VideoSection } from '_components/VideoSection'
 import ThirdSection from '_components/ThirdSection'
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
   }, [])
 
   return (
-    <main className='font-sourceSansPro'>
+    <main>
       {/* Hero Section */}
       <Hero />
 

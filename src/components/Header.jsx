@@ -14,21 +14,25 @@ const Header = () => {
         <nav className='grid col-span-10 col-start-1'>
           <ul className='flex flex-1 space-x-28 text-4xl items-center text-white'>
             <li className='flex-1'>
-              <Link href='#'>
-                <Image src={logo} alt='Fake Site Logo' width='40' height='40' />
+              <Link href='/'>
+                <a>
+                  <Image src={logo} alt='Fake Site Logo' width='40' height='40' />
+                </a>
               </Link>
             </li>
             <li>Account</li>
             <li>Help</li>
             <li>
-              <Link href='#'>
-                <Image
-                  src={stockImage}
-                  alt='Fake Site Logo'
-                  width='40'
-                  height='40'
-                  className='border-2 border-white rounded-full'
-                />
+              <Link href='/user'>
+                <a>
+                  <Image
+                    src={stockImage}
+                    alt='User Logo'
+                    width='40'
+                    height='40'
+                    className='border-2 border-white rounded-full'
+                  />
+                </a>
               </Link>
             </li>
           </ul>

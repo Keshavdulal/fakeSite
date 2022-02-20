@@ -21,21 +21,38 @@ const Footer = () => {
     { title: 'Delete Profile', link: '/delete-profile' },
   ]
 
+  const ArrayList = ({ arr }) => {
+    console.log('@ArrayList', arr)
+    // return null
+
+    return (
+      <ul>
+        {Array.isArray(arr)
+          ? arr.map(i => (
+              <li className='pb-2' key={i?.title}>
+                <Link href={i?.link}>
+                  <a>{i?.title}</a>
+                </Link>
+              </li>
+            ))
+          : null}
+      </ul>
+    )
+  }
+
   return (
     <footer className='py-10'>
       <GridContainer className='pb-48'>
         <nav className='grid col-span-1 col-start-1 text-4xl text-tertiary'>
           <h4 className='text-5xl text-primary pb-5'>Fakesite</h4>
-          <ul>
-            {Array.isArray(COL_A) ? COL_A.map(i => <li className='pb-2'>{i?.title}</li>) : null}
-          </ul>
+
+          <ArrayList arr={COL_A} />
         </nav>
 
         <nav className='grid col-span-2 col-start-3 text-4xl text-tertiary'>
           <h4 className='text-5xl text-primary pb-5'>Account</h4>
-          <ul>
-            {Array.isArray(COL_B) ? COL_B.map(i => <li className='pb-2'>{i?.title}</li>) : null}
-          </ul>
+
+          <ArrayList arr={COL_B} />
         </nav>
       </GridContainer>
 
@@ -43,8 +60,10 @@ const Footer = () => {
         <nav className='grid col-span-10 col-start-1 border-t-2 border-tertiary/50 py-10'>
           <ul className='flex flex-1 space-x-28 text-4xl items-center text-tertiary'>
             <li className='flex-1'>
-              <Link href='#'>
-                <Image src={logo} alt='Fake Site Logo' width='40' height='40' />
+              <Link href='/'>
+                <a>
+                  <Image src={logo} alt='Fake Site Logo' width='40' height='40' />
+                </a>
               </Link>
             </li>
             <li>Terms</li>

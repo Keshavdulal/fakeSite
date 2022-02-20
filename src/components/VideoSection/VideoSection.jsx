@@ -1,10 +1,13 @@
+import clsx from 'clsx'
 import React from 'react'
 import Image from 'next/image'
 
 import GridContainer from '_components/GridContainer'
 
-import VimeoVideos from '../../videos.json'
+import VimeoVideos from '../../../videos.json'
 import playBtn from '_public/assets/playbtn.png'
+
+import s from './VideoSection.module.scss'
 
 const VideoSection = () => {
   if (!Array.isArray(VimeoVideos)) return null
@@ -29,7 +32,8 @@ const VideoSection = () => {
 
           <div className='col-start-7 col-span-4'>
             {item?.thumbnail_medium ? (
-              <div className='relative cursor-pointer'>
+              <div className={clsx('relative cursor-pointer', s.thumbnail)}>
+                {/* Thumbnail */}
                 <Image
                   src={item?.thumbnail_medium}
                   alt={item?.title}
@@ -37,7 +41,24 @@ const VideoSection = () => {
                   width='640'
                   className='rounded-lg'
                 />
-                <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+
+                {/* gradient */}
+                <div
+                  className={clsx(
+                    'absolute top-0 left-0',
+                    'w-full h-full',
+                    'bg-gradient-to-b from-red-700 to-red-200 opacity-90'
+                    // 'hover:opacity-0 transition-all duration-250'
+                  )}></div>
+
+                {/* Play Button */}
+                <div
+                  className={clsx(
+                    'absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2',
+                    'transition-all duration-200',
+                    s.playButton
+                    // 'hover:scale-110 transition-transform duration-200',
+                  )}>
                   <Image src={playBtn} alt='Play Button' height='100' width='100' />
                 </div>
               </div>

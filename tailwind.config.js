@@ -115,10 +115,10 @@ module.exports = {
         secondary: 'var(--secondary)',
         tertiary: 'var(--tertiary)',
       },
-    },
-    fontFamily: {
-      sourceSansPro: ['Source Sans Pro'],
-      sans: ['Source Sans Pro', 'sans-serif'],
+      fontFamily: {
+        // sourceSansPro: ['"Source Sans Pro"'],
+        sans: ['"Source Sans Pro"'],
+      },
     },
   },
   // plugins: [require('@tailwindcss/aspect-ratio')],

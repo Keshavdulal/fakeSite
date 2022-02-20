@@ -6,23 +6,25 @@ import heroImage from '_public/assets/hero-image.png'
 
 const Hero = () => {
   return (
-    <section
-      className={clsx(
-        ' py-96',
-        // 'flex flex-col items-center justify-center',
-        'relative'
-      )}>
+    <section className='relative mb-10'>
       <Image
         src={heroImage}
         alt='Fake Site Logo'
-        width='1600'
-        height='900'
-        layout='fill'
-        className='absolute top-0 -z-10 '
+        width='1440'
+        height='720'
+        layout='responsive'
+        className='-z-10'
       />
 
-      <div className='flex flex-col items-center justify-center '>
-        <h1 className='text-6xl text-secondary mb-20 text-white'>The world's greatest fake site</h1>
+      <div
+        className={clsx(
+          'absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2',
+          'flex flex-col items-center justify-center '
+          // 'bg-red-300'
+        )}>
+        <h1 className='text-6xl text-secondary mb-20 text-white font-sans'>
+          The world's greatest fake site
+        </h1>
 
         <p className='text-secondary text-4xl mb-20 text-white'>
           Create the world's greatest fake site and enjoy the breeze of fresh air when you complete
