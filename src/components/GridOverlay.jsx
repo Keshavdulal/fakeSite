@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react'
 
-// import useKeyPress from '../../hooks/useKeyPress'
+import useKeyPress from '_hooks/useKeyPress'
 
 // Grid Overlay for toggling grid system
 const GridOverlay = () => {
   const [isGridActive, setGridStatus] = useState(true)
 
   // Track multi-key press
-  // const ctrlPress = useKeyPress('control') // key - ctrl
-  // const gPress = useKeyPress('g') // key - g
+  const ctrlPress = useKeyPress('control') // key - ctrl
+  const gPress = useKeyPress('g') // key - g
 
-  // useEffect(() => {
-  //   if (ctrlPress && gPress) setGridStatus(!isGridActive)
-  // }, [ctrlPress, gPress])
+  useEffect(() => {
+    if (ctrlPress && gPress) setGridStatus(!isGridActive)
+  }, [ctrlPress, gPress])
 
   return (
     <div id='grid-overlay' className='relative flex justify-center'>

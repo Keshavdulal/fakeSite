@@ -18,7 +18,9 @@ export default function MainApp({ Component, pageProps }) {
       <div
         id='main-content'
         className='flex flex-col flex-grow flex-shrink-0 min-h-screen overflow-hidden'>
-        {/* <GridOverlay /> */}
+        {/* Use Ctrl + G to toggle grid */}
+        <GridOverlay />
+
         <Component {...pageProps} />
       </div>
       <Footer />
