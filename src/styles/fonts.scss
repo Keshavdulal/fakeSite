@@ -1,12 +1,12 @@
 // TODO: Convert otf fonts to woff2
 
-// @font-face {
-//   font-family: 'Source Sans Pro';
-//   src: url('/fonts/SourceSansPro-Light.otf');
-//   font-style: normal;
-//   font-weight: 100;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/SourceSansPro-Light.otf');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Source Sans Pro';
@@ -17,10 +17,10 @@
   font-display: swap;
 }
 
-// @font-face {
-//   font-family: 'Source Sans Pro';
-//   src: url('/fonts/SourceSansPro-Bold.otf');
-//   font-style: normal;
-//   font-weight: 700;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/SourceSansPro-Bold.otf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

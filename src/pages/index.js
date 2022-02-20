@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import Hero from '_components/Hero'
+import HeroSection from '_components/HeroSection'
 import { VideoSection } from '_components/VideoSection'
 import ThirdSection from '_components/ThirdSection'
 
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main>
       {/* Hero Section */}
-      <Hero />
+      <HeroSection />
 
       {/* Videos Section */}
       <VideoSection />

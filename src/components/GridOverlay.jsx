@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { useState, useEffect } from 'react'
 
 import useKeyPress from '_hooks/useKeyPress'
@@ -18,7 +19,11 @@ const GridOverlay = () => {
     <div id='grid-overlay' className='relative flex justify-center'>
       {isGridActive && (
         <div className='container fixed z-50 mx-auto h-screen text-center text-white opacity-10 pointer-events-none'>
-          <div className='grid gap-4 grid-cols-8 h-screen md:gap-8 md:grid-cols-12'>
+          <div
+            className={clsx(
+              'grid gap-4 grid-cols-8 h-screen px-10',
+              'md:gap-8 md:grid-cols-12 md:px-0'
+            )}>
             <div className='col-span-1 bg-gray-500'>1</div>
             <div className='col-span-1 bg-gray-500'>2</div>
             <div className='col-span-1 bg-gray-500'>3</div>
