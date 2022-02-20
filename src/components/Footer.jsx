@@ -72,7 +72,7 @@ const Footer = () => {
             <li className='md:flex-1 mb-10 md:mb-0'>
               <Link href='/'>
                 <a>
-                  <Image src={logo} alt='Fake Site Logo' width='40' height='40' />
+                  <Image src={logo} alt='Fake Site Logo' width='90' height='69' />
                 </a>
               </Link>
             </li>

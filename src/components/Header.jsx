@@ -17,7 +17,7 @@ const Header = ({ showMobileMenu }) => {
             <li className='flex-1 cursor-pointer'>
               <Link href='/'>
                 <a>
-                  <Image src={logo} alt='Fake Site Logo' width='40' height='40' />
+                  <Image src={logo} alt='Fake Site Logo' width='90' height='69' />
                 </a>
               </Link>
             </li>
@@ -35,7 +35,7 @@ const Header = ({ showMobileMenu }) => {
                     alt='User Logo'
                     width='40'
                     height='40'
-                    className='border-4 border-white rounded-full object-cover w-24 h-24'
+                    className='border-4 border-white rounded-full object-cover w-20 h-20'
                   />
                 </a>
               </Link>
