@@ -44,6 +44,7 @@ export default function MainApp({ Component, pageProps }) {
 
         <Component {...pageProps} />
       </div>
+
       <Footer />
     </div>
   )

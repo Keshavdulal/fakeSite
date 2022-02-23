@@ -25,10 +25,9 @@ const VideoSection = () => {
   return (
     <section className='mb-16'>
       {VimeoVideos.map((item, index) => (
-        <Link href={item?.url}>
+        <Link href={item?.url} key={item?.id}>
           <a target='_blank'>
             <GridContainer
-              key={item?.id}
               className={clsx('py-10', 'cursor-pointer', 'hover:bg-slate-500/20 transition-all')}>
               <div
                 className={clsx(

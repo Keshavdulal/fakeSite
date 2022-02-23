@@ -8,7 +8,7 @@ const MobileMenu = ({ isMobileMenuVisible, hideMobileMenu }) => {
   return (
     <nav
       className={clsx(
-        'absolute top-0 left-0 right-0 bottom-0',
+        'fixed top-0 left-0 right-0 bottom-0',
         'bg-white text-tertiary w-100vw h-screen z-20',
         'flex justify-center items-center',
         'text-7xl'
